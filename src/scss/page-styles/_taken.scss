@@ -1,7 +1,4 @@
 .taken {
-    &__text-container{
-        margin: 60px 0;
-    }
     &__title {
         font-size: 48px;
         color: #f06464;
@@ -18,29 +15,12 @@
         font-family: "Varela Round";
     }
 
-    &__wrapper {
-        
-    }
-
-    &__items {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        @media screen and (max-width: 900px){
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @media screen and (max-width: 768px){
-            grid-template-columns: 1fr;
-        }
-    }
-
     &__item {
         height: 400px;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        position: relative;
         transition: .3s;
         &:nth-child(1){
             background-image: url("../../img/rectangle_4.jpg");

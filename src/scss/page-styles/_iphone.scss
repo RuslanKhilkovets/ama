@@ -62,15 +62,14 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 120px;
-        width: 100px;
+        height: 100%;
+        width: 100%;
         background-image: url("../../img/iphone_2.png"); 
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 60% 100%;
+        background-size: 100% 100%;
         @media screen and (max-width: 768px) {
-            background-size: cover;
+            background-size: contain;
         }
-        background-color: #fff;
     }
 }

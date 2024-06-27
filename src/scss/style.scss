@@ -30,6 +30,13 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: none!important;
+    transition: .3s!important;
+    color: #fff!important;
+    opacity: .8;
+}
+
 .global-container{
     width: min(1170px, 100%);
     margin: 0 auto;
@@ -65,10 +72,7 @@ a{
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom: 0!important;
 }
-.iphone .swiper-slide {
-    background-image: url("../../img/iphone_2.png"); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
+.iphone .swiper-slide {
+
+}

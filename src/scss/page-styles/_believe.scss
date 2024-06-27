@@ -2,10 +2,6 @@
     background-color: #de5d5d;
 
     &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
         gap: 5%;
         padding: 100px 10px;
     }
@@ -20,8 +16,6 @@
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
         gap: 30px;
         width: 100%; 
         max-width: 600px; 
@@ -61,8 +55,7 @@
     &{
         .iphone{
             &__button {
-                &:hover{
-                    
+                &:hover{     
                     background-color: #d0c5c5;
                 }
                 &:hover .iphone__button--text{

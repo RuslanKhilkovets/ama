@@ -17,13 +17,9 @@
 }
 
 .info {
-    padding: 0 20px;
     &__wrapper {
-        display: flex;
-        justify-content: space-between;
         gap: 80px;
     }
-
     &__img {
         height: 650px;
         width: min(100%, 600px);
@@ -40,9 +36,6 @@
     }
 
     &__content {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         gap: 5%;
         width: min(100%, 400px);
     }
@@ -64,20 +57,12 @@
     }
 
     &__slide {
-        display: flex;
-        justify-content: space-between;
         gap: 20px;
         max-width: 450px;
     }
     &__slider{
         padding: 30px 0;
-        overflow: hidden;
-        position: relative;
         margin-bottom: 20px;
-    }
-    & .swiper-slide{
-        display: flex;
-        align-items: center;
     }
 }
 
@@ -93,23 +78,15 @@
         font-size: 16px;
         line-height: 24px;
         color: #aeaeae;
-        font-weight: 400;
         font-family: "Varela Round";
-        margin-right: 20px;
     }
 }
 .feature-slider {
     position: relative;
-    overflow: hidden;
     background-color: #fff;
-    padding: 20px;
-    padding-bottom: 60px;
-    margin-bottom: 20px;
     border-radius: 10px;
     &__swiper-pagination{
         background-color: #de5d5d;
-        padding: 10px;
-        position: absolute;
         bottom: 0;
         width: 100%;
     }
@@ -120,10 +97,6 @@
         background-size: contain;
         background-position: center;
         background-image: url("../../img/brush.png");
-    }
-
-    &__wrapper {
-        margin: 0 10px;
     }
     &__slide{
         display: flex!important;
@@ -146,7 +119,6 @@
         font-family: "Varela Round";
     }
 }
-
 
 @media (max-width: 768px){
     .info{

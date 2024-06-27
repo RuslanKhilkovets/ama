@@ -2,7 +2,6 @@
     background-color: #e7e7e7;
     padding: 100px 0;
     &__header {
-        width: 100%;
         border-bottom: 2px solid #cbcbcb;
     }
 
@@ -13,22 +12,12 @@
         font-weight: 400;
         font-family: "Montserrat";
     }
-
-    &__wrapper {
-        width: 100%;
-    }
 }
 
 .comp-type {
-    display: flex;
-    justify-content: space-between;
     gap: 50px;
-    margin-top: 20px;
-    @media screen and (max-width: 768px) {
-            flex-wrap: wrap;
-    }
+
     &__devices{
-        margin-top: 20px;
         height: 80px;
         background-repeat: no-repeat;
         background-position: left;
@@ -60,6 +49,4 @@
         font-weight: 400;
         font-family: "Montserrat";
     }
-
-
 }
