@@ -1,0 +1,76 @@
+.iphone {
+    margin-top: 0;
+    width: 100%;
+    background-color: #de5d5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 600px;
+    position: relative;
+    margin-top: 70px;
+    padding: 0 20px;
+    &__wrapper {
+        z-index: 2; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__title {
+        font-size: 90px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Montserrat";
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__button {
+        border: 2px solid #ffffff;
+        padding: 15px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            background-color: #de5d5d;
+            transition: .3s;
+        }
+    }
+
+    &__button--icon {
+        width: 40px;
+        height: 40px;
+    }
+    &__button--text {
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Varela Round";
+    }
+
+    &__phone {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 120px;
+        width: 100px;
+        background-image: url("../../img/iphone_2.png"); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60% 100%;
+        @media screen and (max-width: 768px) {
+            background-size: cover;
+        }
+        background-color: #fff;
+    }
+}

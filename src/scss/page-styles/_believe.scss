@@ -1,0 +1,74 @@
+.believe {
+    background-color: #de5d5d;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5%;
+        padding: 100px 10px;
+    }
+
+    &__logo {
+        width: 246px;
+        height: 246px;
+        background-image: url("../../img/app_icon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%; 
+        max-width: 600px; 
+    }
+    &__title {
+        width: min(398px, 100%);
+        font-size: 48px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Montserrat";
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Varela Round";
+    }
+    @media (min-width: 768px) {
+        &__content {
+            &__title {
+                font-size: 32px;
+            }
+
+            &__subtitle {
+                font-size: 18px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        &__wrapper{
+            padding: 40px 10px;
+            gap: 30px;
+        }
+    }
+
+    &{
+        .iphone{
+            &__button {
+                &:hover{
+                    
+                    background-color: #d0c5c5;
+                }
+                &:hover .iphone__button--text{
+                    color: #de5d5d;
+                }
+            }
+        }
+    }
+}

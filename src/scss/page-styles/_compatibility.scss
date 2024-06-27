@@ -1,0 +1,65 @@
+.compatibility {
+    background-color: #e7e7e7;
+    padding: 100px 0;
+    &__header {
+        width: 100%;
+        border-bottom: 2px solid #cbcbcb;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 60px;
+        color: #666666;
+        font-weight: 400;
+        font-family: "Montserrat";
+    }
+
+    &__wrapper {
+        width: 100%;
+    }
+}
+
+.comp-type {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 20px;
+    @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+    }
+    &__devices{
+        margin-top: 20px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+    }
+
+    &__item:nth-child(1) &__devices {
+        width: 300px;
+        background-image: url("../../img/ios_devices.png");
+    }
+    &__item:nth-child(2) &__devices {
+        width: min(500px, 100%);
+        background-image: url("../../img/android_devices.png");
+
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 24px;
+        color: #666666;
+        font-weight: 400;
+        font-family: "Montserrat";
+    }
+
+    &__subtitle {
+        width: min(100%, 410px);
+        font-size: 14px;
+        line-height: 24px;
+        color: #666666;
+        font-weight: 400;
+        font-family: "Montserrat";
+    }
+
+
+}

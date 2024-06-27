@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+@import 'base/*.scss';
+@import 'global/*.scss';
+@import '**/_*.scss';
+@import '../components/**/*.scss';
+
+
+html, body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul{
+    padding-block-start: 0;
+    margin-block-start: 0;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    font-family: "Source Sans 3", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.global-container{
+    width: min(1170px, 100%);
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #fff!important;
+}
+
+.iphone .swiper-pagination-bullet{
+    transform: translateY(-120px) scale(1.5);
+}
+
+.swiper-pagination-bullet{
+    margin-left: 20px;
+    transform: translateY(0px) scale(1.5);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+}
+.iphone .swiper-container {
+    position: absolute;
+    top: 10px;
+    width: 60%;
+    height: 700px;
+    margin: auto;
+    @media screen and (max-width: 768px) {
+        background-size: cover;
+    }
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0!important;
+}
+.iphone .swiper-slide {
+    background-image: url("../../img/iphone_2.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+

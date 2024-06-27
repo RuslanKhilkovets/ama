@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    padding: 20px 0;
+    background-color: #de5d5d;
+    &__logo {
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            transition: .3s;
+            transform: translateY(-5px);
+        }
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo--text {
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: "Arial";
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        &:hover{
+            opacity: .7;
+        }
+    }
+
+    &__link--link {
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Varela Round";
+
+        &.active::after{
+            opacity: 1;
+            transition: .3s;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: -125%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            opacity: 0;
+            transition: .5s;
+            pointer-events: none;
+        }
+    }
+}
+
+.burger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 40px;
+    &-item{
+        transition: .3s;
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    &.active &-item:nth-child(1){
+        transform: rotate(40deg) translateX(9px);
+    }
+    &.active &-item:nth-child(2){
+        display: none;
+    }
+    &.active &-item:nth-child(3){
+        transform: rotate(-45deg) translateX(10px);
+    }
+}
+
+.mobile-navbar {
+    position: absolute;
+    transition: .5s;
+    transform: translateY(-300vw);
+    background-color: #de5d5d;
+    width: 100vw;
+    height: calc(100vh - 55px);
+    display: flex;  
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 20px;
+    z-index: 99999;
+    &__item {
+        font-size: 3rem;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Varela Round";
+    }
+    &.active{
+        transform: translate(0);
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .header{
+        &__list{
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        &__list{
+            display: none;
+        }
+        
+    }
+    .burger{
+        display: flex;
+    }
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<title>ama</title>
+</head>
+
+
+<body>
+	<header class="header" id="header">
+    <div class="global-container">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <p class="header__logo--text" onclick="scrollToSection(0, event)">
+                    ama
+                </p>
+            </div>
+            <ul class="header__list">
+                <li class="header__link"><a href="#" class="header__link--link active" onclick="scrollToSection(0, event)">Hello</a></li>
+                <li class="header__link"><a href="#" class="header__link--link" onclick="scrollToSection(1, event)">Overview</a></li>
+                <li class="header__link"><a href="#" class="header__link--link" onclick="scrollToSection(2, event)">Share</a></li>
+                <li class="header__link"><a href="#" class="header__link--link" onclick="scrollToSection(3, event)">Feature</a></li>
+                <li class="header__link"><a href="#" class="header__link--link" onclick="scrollToSection(4, event)">Gallery</a></li>
+                <li class="header__link"><a href="#" class="header__link--link" onclick="scrollToSection(5, event)">Download</a></li>
+                <li class="header__link"><a href="#" class="header__link--link" onclick="scrollToSection(6, event)">Compatibility</a></li>
+            </ul>
+            
+            <div class="burger">
+                <div class="burger-item"></div>
+                <div class="burger-item"></div>
+                <div class="burger-item"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-navbar">
+        <p onclick="scrollToSection(0, event)" class="mobile-navbar__item">Hello</p>
+        <p onclick="scrollToSection(1, event)" class="mobile-navbar__item">Overview</p>
+        <p onclick="scrollToSection(2, event)" class="mobile-navbar__item">Share</p>
+        <p onclick="scrollToSection(3, event)" class="mobile-navbar__item">Feature</p>
+        <p onclick="scrollToSection(4, event)" class="mobile-navbar__item">Gallery</p>
+        <p onclick="scrollToSection(5, event)" class="mobile-navbar__item">Download</p>
+        <p onclick="scrollToSection(6, event)" class="mobile-navbar__item">Compatibility</p>
+    </div>
+</header>
+	<main class="main">
+		<div class="iphone">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide iphone_phone"></div>
+            <div class="swiper-slide iphone_phone"></div>
+            <div class="swiper-slide iphone_phone"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="iphone__wrapper">
+        <div class="iphone__title">Capture and Share</div>
+        <div class="iphone__buttons">
+            <div class="iphone__button">
+                <img class="iphone__button--icon" src="../../img/icon-appstore.png" alt="icon">
+                <span class="iphone__button--text">App store</span>
+            </div>
+            <div class="iphone__button">
+                <img class="iphone__button--icon" src="../../img/icon-playstore.png" alt="icon">
+                <span class="iphone__button--text">Play Store</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<div class="why" id="overview">
+    <p class="why__title">Why ama?</p>
+    <div class="global-container">
+        <div class="why__wrapper">
+            <div class="why__item why-item">
+                <div class="why-item__img"></div>
+                <div class="why-item__text">
+                    <p class="why-item__title">
+                        Auto focus
+                    </p>
+                    <p class="why-item__subtitle">
+                        ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar 
+                    </p>
+                </div>
+            </div>
+            <div class="why__item why-item">
+                <div class="why-item__img"></div>
+                <div class="why-item__text">
+                    <p class="why-item__title">
+                        Secured with Touch ID 
+                    </p>
+                    <p class="why-item__subtitle">
+                        ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida 
+                    </p>
+                </div>
+            </div>
+            <div class="why__item why-item">
+                <div class="why-item__img"></div>
+                <div class="why-item__text">
+                    <p class="why-item__title">
+                        Your Filters
+                    </p>
+                    <p class="why-item__subtitle">
+                        ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<div class="info share" id="share">
+    <div class="global-container">
+        <div class="info__wrapper">
+            <div class="info__img"></div>
+            <div class="info__content">
+                <p class="info__title">
+                    Share instantly
+                </p>
+                <p class="info__subtitle">
+                    Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.
+                </p>
+                <div class="info__slider info__slider-share">
+                    <div class="swiper-wrapper">
+                        <div class="info__slide swiper-slide">
+                            <div class="slide__media"></div>
+                            <p class="slide__title">
+                                Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare.
+                            </p>
+                        </div>
+                        <div class="info__slide swiper-slide">
+                            <div class="slide__media"></div>
+                            <p class="slide__title">
+                                Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare.
+                            </p>
+                        </div>
+                        <div class="info__slide swiper-slide">
+                            <div class="slide__media"></div>
+                            <p class="slide__title">
+                                Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="info features" id="feature">
+    <div class="global-container">
+        <div class="info__wrapper">
+            <div class="info__content">
+                <p class="info__title">
+                    New Features
+                </p>
+                <p class="info__subtitle">
+                    Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida. 
+                </p>
+                <div class="feature-slider info__slider-feature">
+                    <div class="swiper-wrapper">
+                        <div class="feature-slider__slide swiper-slide">
+                            <div class="feature-slider__img"></div>
+                            <div class="feature-slider__wrapper">
+                                <p class="feature-slider__title">
+                                    Color your photos
+                                </p>
+                                <p class="feature-slider__subtitle">
+                                    ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature-slider__slide swiper-slide">
+                            <div class="feature-slider__img"></div>
+                            <div class="feature-slider__wrapper">
+                                <p class="feature-slider__title">
+                                    Color your photos
+                                </p>
+                                <p class="feature-slider__subtitle">
+                                    ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature-slider__slide swiper-slide">
+                            <div class="feature-slider__img"></div>
+                            <div class="feature-slider__wrapper">
+                                <p class="feature-slider__title">
+                                    Color your photos
+                                </p>
+                                <p class="feature-slider__subtitle">
+                                    ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-slider__swiper-pagination"></div>
+                    <!-- Add Pagination -->
+                </div>
+            </div>
+            <div class="info__img"></div>
+        </div>
+    </div>
+</div>
+		<section class="taken" id="gallery">
+    <div class="global-container">
+        <div class="taken__text-container">
+            <p class="taken__title">Taken with ama</p>
+            <p class="taken__subtitle">
+                Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida. 
+            </p>
+        </div>
+    </div>
+    <div class="taken__wrapper">
+        <ul class="taken__items">
+            <li class="taken__item taken-item">
+                <div class="taken-item__wrapper">
+                    <p class="taken-item--text">Mauris euismod ultrices</p>
+                    <div class="taken-item--likes">65</div>
+                </div>
+            </li>
+            <li class="taken__item taken-item">
+                <div class="taken-item__wrapper">
+                    <p class="taken-item--text">Mauris euismod ultrices</p>
+                    <div class="taken-item--likes">65</div>
+                </div>
+            </li>
+            <li class="taken__item taken-item">
+                <div class="taken-item__wrapper">
+                    <p class="taken-item--text">Mauris euismod ultrices</p>
+                    <div class="taken-item--likes">65</div>
+                </div>
+            </li>
+            <li class="taken__item taken-item">
+                <div class="taken-item__wrapper">
+                    <p class="taken-item--text">Mauris euismod ultrices</p>
+                    <div class="taken-item--likes">65</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+		<section class="believe" id="download">
+    <div class="global-container">
+        <div class="believe__wrapper">
+            <div class="believe__logo"></div>
+            <div class="believe__content">
+                <p class="believe__title">Believe me, 
+                    you don’t wanna 
+                    miss this app.</p>
+                <p class="believe__subtitle">- Newyork Times</p>
+                <div class="iphone__buttons">
+                    <div class="iphone__button">
+                        <img class="iphone__button--icon" src="../../img/icon-appstore.png" alt="icon">
+                        <span class="iphone__button--text">App store</span>
+                    </div>
+                    <div class="iphone__button">
+                        <img class="iphone__button--icon" src="../../img/icon-playstore.png" alt="icon">
+                        <span class="iphone__button--text">Play Store</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="compatibility" id="compatibility">
+    <div class="global-container">
+        <div class="compatibility__header">
+            <p class="compatibility__title">Compatibility</p>
+        </div>
+        <div class="compatibility__wrapper">
+            <div class="compatibility__type comp-type">
+                <div class="comp-type__item">
+                    <p class="comp-type__title">iOS</p>
+                    <p class="comp-type__subtitle">
+                        Requires iOS 6.0 or later. Compatible with iPhone, iPad, and iPod touch. This app is optimized for iPhone 5.
+                    </p>
+                    <div class="comp-type__devices"></div>
+                </div>
+                <div class="comp-type__item">
+                    <p class="comp-type__title">Android</p>
+                    <p class="comp-type__subtitle">
+                        Compatible with Android KitKat 4.4 or later.Support for x86 devices (i.e. Samsung Galaxy Tab 3 10.1).
+                    </p>
+                    <div class="comp-type__devices"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	</main>
+	<footer class="footer">
+    <div class="global-container">
+        <div class="footer__wrapper">
+            <p class="footer__rights">                    
+                © 2014 ama. All Rights Reserved.
+            </p>
+            <div class="footer__contact footer-contact">
+                <form action="#" class="footer-contact__form">
+                    <p class="footer-contact__title">Subscribe our email newsletter.</p>
+                    <div class="footer-contact__block">
+                        <input type="text" class="footer-contact__input" placeholder="Your email">
+                        <button class="footer-contact__submit-btn" type="button">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	
+</body>
+
+</html>

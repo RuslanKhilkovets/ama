@@ -1,0 +1,84 @@
+.footer {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        gap: 20px;
+    }
+
+    &__rights {
+        text-align: center;
+        font-size: 18px;
+        color: #666666;
+        font-weight: 400;
+        font-family: "Montserrat";
+    }
+}
+
+.footer-contact {
+
+    &__title {
+        font-size: 17px;
+        line-height: 26px;
+        color: #666666;
+        font-weight: 400;
+        font-family: "Varela Round";
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__input {
+        padding-left: 10px;
+        width: 311px;
+        height: 48px;
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        border: 1px solid #a3a3a3;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+        font-weight: 400;
+        font-family: "Varela Round";
+        outline: none;
+        &:focus{
+            border-color: #de5d5d;
+        }
+    }
+
+    &__submit-btn {
+        width: 101px;
+        height: 48px;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        background-color: #f06464;
+        font-size: 16px;
+        line-height: 24px;
+        color: #f4f4f4;
+        font-weight: 400;
+        font-family: "Varela Round";
+        transition: .3s;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid #f06464;
+            color: #f06464;
+            transition: .3s;
+        }
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
