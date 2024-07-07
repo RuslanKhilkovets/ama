@@ -101,6 +101,7 @@
     &__slide{
         display: flex!important;
         align-items: center;
+        gap: 15px;
     }
     &__title {
         font-size: 18px;
@@ -128,5 +129,8 @@
         &__img{
             height: 450px;
         }
+    }
+    .feature-slider__img {
+        display: none;
     }
 }

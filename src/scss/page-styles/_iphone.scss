@@ -24,6 +24,9 @@
         color: #ffffff;
         font-weight: 400;
         font-family: "Montserrat";
+        @media (max-width: 768px) {
+            font-size: 4rem;
+        }
     }
 
     &__buttons {
@@ -36,13 +39,17 @@
         border: 2px solid #ffffff;
         padding: 15px;
         display: flex;
-        gap: 10px;
         align-items: center;
+        gap: 10px;
         cursor: pointer;
         transition: .3s;
         &:hover{
             background-color: #de5d5d;
             transition: .3s;
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+            justify-content: center;
         }
     }
 
@@ -68,8 +75,11 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        @media screen and (max-width: 1024px) {
+            background-size: 100% 80%;
+        }
         @media screen and (max-width: 768px) {
-            background-size: contain;
+            display: none!important;
         }
     }
 }

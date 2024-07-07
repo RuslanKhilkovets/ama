@@ -43,36 +43,3 @@ a:hover{
     padding: 0 20px;
     box-sizing: border-box;
 }
-
-.swiper-pagination-bullet-active{
-    background-color: #fff!important;
-}
-
-.iphone .swiper-pagination-bullet{
-    transform: translateY(-120px) scale(1.5);
-}
-
-.swiper-pagination-bullet{
-    margin-left: 20px;
-    transform: translateY(0px) scale(1.5);
-    width: 20px;
-    height: 20px;
-    border: 1px solid #fff;
-}
-.iphone .swiper-container {
-    position: absolute;
-    top: 10px;
-    width: 60%;
-    height: 700px;
-    margin: auto;
-    @media screen and (max-width: 768px) {
-        background-size: cover;
-    }
-}
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-    bottom: 0!important;
-}
-
-.iphone .swiper-slide {
-
-}

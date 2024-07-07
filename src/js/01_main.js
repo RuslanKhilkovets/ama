@@ -91,22 +91,29 @@ window.onload = function() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    new Swiper('.swiper-container', {
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        loop: true,
-        autoplay: {
-            delay: 3000,
-        },
-    });
+    const getWindowSize = window.innerWidth;
+    const mobileDevicesScreenWidth = 768;
+
+    if(+getWindowSize >= mobileDevicesScreenWidth){
+        new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    }
+
     new Swiper('.info__slider-share', {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
     });
+
     new Swiper('.info__slider-feature', {
         slidesPerView: 1,
         spaceBetween: 0, 
@@ -118,3 +125,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+const getData = async() => {
+    return await fetch('https://jsonplaceholder.typicode.com/todos/2')
+      .then(response => response.json())
+      .then(json => console.log(json))
+}
+
+console.log(getData());
